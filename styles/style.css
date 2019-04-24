@@ -1,5 +1,3 @@
-
-
 p {
     margin-top: 1em;
 }
@@ -8,13 +6,27 @@ hr {
     margin: 1em 0 1em 0;
 }
 
-.container{
+.menu-list a.is-active {
+    background-color: darkslategray;
+}
+
+.container {
     padding: 1em;
+}
+
+.custom-hero {
+    display: flex;
+    background-color: darkslategray;
+    justify-content: center;
+}
+
+.custom-hero .title {
+    color: white;
 }
 
 @media(max-width: 767px) {
     .reverse-row-order {
-      flex-direction: column-reverse;
-      display: flex;
+        flex-direction: column-reverse;
+        display: flex;
     }
-  }
+}

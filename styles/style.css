@@ -16,8 +16,9 @@ hr {
 
 .custom-hero {
     display: flex;
-    background-color: darkslategray;
     justify-content: center;
+    background-color: darkslategray;
+    flex-direction: column;
 }
 
 .custom-hero .title {

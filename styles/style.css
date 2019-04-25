@@ -10,6 +10,10 @@ hr {
     background-color: darkslategray;
 }
 
+.menu .menu-list .button{
+    margin-bottom: 1em;
+}
+
 .container {
     padding: 1em;
 }

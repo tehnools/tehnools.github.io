@@ -8,6 +8,7 @@ hr {
 
 .menu-list a.is-active {
     background-color: darkslategray;
+    color: white;
 }
 
 .menu .menu-list .button{

@@ -249,14 +249,6 @@ ul.menu-list a:hover {
     display: inline-flex;
     justify-content: center;
 }
-
-@media screen and (min-width: 1088px) {
-    .container {
-        max-width: 960px;
-        width: 960px;
-    }
-}
-
 @media screen and (min-width: 769px), print {
     .columns:not(.is-desktop) {
         display: flex;
@@ -267,6 +259,11 @@ ul.menu-list a:hover {
     .column.is-one-third-desktop {
         flex: none;
         width: 33.3333%;
+    }
+
+    .container {
+        max-width: 1088px;
+        width: 1088px;
     }
 }
 

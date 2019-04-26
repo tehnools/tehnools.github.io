@@ -1,0 +1,101 @@
+<html>
+
+<head>
+    <title>My blog</title>
+    <link rel="stylesheet" href="../styles/main.css" type="text/css">
+    <link rel="stylesheet" href="../styles/style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="hero">
+        <div class="hero-body custom-hero">
+            <h1 class="title is-1 hero-heading">Sprint 2 Technical Blog</h1>
+            <h2 class="title is-4 hero-heading">26, Apri 2019</h2>
+        </div>
+    </div>
+    <div class="container">
+        <div class="columns reverse-row-order">
+            <div class="column is-two-thirds">
+                <div class='box'>
+                    <h2 class="title is-2">What are the best practices associated with using classes vs. ids?</h2>
+                    <p class="alert">Question: Do you notice that this webpage is different?</p>
+                    <p>The whole page is no longer using the framework <b>Bulma</b> and relies on my own custom classes
+                    </p>
+                    <h3 class="title is-3">What are classes and Ids?</h3>
+                    <p>Classes and Ids are used to specify elements in a page.</p>
+                    <p>This is particularly useful because you can use these specific classes and ids to change the html
+                        document using Cascading Style Sheets or Javascript</p>
+                    <h3 class="title is-3">Why use one over the other?</h3>
+                    <p>Ids are used for unique elements like a specific post from a blog. If the post from a blog has an Id the styles can be changed for the specific post.</p>
+                    <p>Also if you have javascript you can manipulate the individual element instead of multiple classes.</p>
+                    <p>Link: <a href="https://codepen.io/anon/pen/xemoYp">Example of Ids in use.</a></p>
+                    <figure>
+                        <pre>
+                            <code>&lt;div id="e6411de" class="post">&lt;/div></code>
+                        </pre>
+                    </figure>
+                    <hr>
+                    <p>Classes are used for multiple elements of the same type</p>
+                    <figure>
+                        <pre>
+                            <code>&lt;div class="container">&lt;/div></code>
+                        </pre>
+                    </figure>
+                    <p>Also Classes are easily added to an element</p>
+                    <p>Link: <a href="https://codepen.io/anon/pen/XQoLRM">Example of multiple containers with classes</a></p>
+                    <figure>
+                        <pre>
+                                <code>&lt;div class="container blue">&lt;/div></code>
+                        </pre>
+                    </figure>
+
+                    <h3 class="title is-3">Convention is a thing</h3>
+                    <p>It's universally guideline for every web designer to follow the rules other wise there would be
+                        chaos</p>
+                    <p>For example if you use IDs for multiple elements as well as classes for multiple elements. Other
+                        designers in your team would find it difficult if IDs are unique or classes are not.</p>
+                    <p>The Designers in your team might confuse the uses of the two and the styles will be messed up.
+                    </p>
+                </div>
+            </div>
+            <!-- NAV BAR -->
+            <div class="column is-one-third">
+                <div class="box">
+                    <h2 class="subtitle">Links</h2>
+                    <div class="menu">
+                        <ul class="menu-list">
+                            <a class="button is-dark is-fullwidth is-outlined" href="https://github.com/tehnools">
+                                <span class="icon">
+                                    <i class="fab fa-github" aria-hidden="true"></i>
+                                </span>
+                                <span>
+                                    My Github
+                                </span>
+                            </a>
+                            <a class="button is-primary is-fullwidth is-outlined"
+                                href="https://noelsoong.wordpress.com/">
+                                <span class="icon">
+                                    <i class="fab fa-wordpress" aria-hidden="true"></i>
+                                </span>
+                                <span>
+                                    My Wordpress
+                                </span>
+                            </a>
+                            <hr>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="./self_reflection.html">Identity, Values and Strengths</a></li>
+                            <li><a href="./sprint1-technical.html">Sprint 1 Technical Blog</a></li>
+                            <li><a class="is-active" href="#">Sprint 2 Technical Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- NAV BAR -->
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>

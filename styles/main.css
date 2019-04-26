@@ -15,14 +15,6 @@ a:visited {
     color: #166694;
 }
 
-span.string{
-    color: #ffa581 !important;
-}
-
-span.option{
-    color: #6ecaff !important;
-}
-
 div {
     display: block;
 }
@@ -43,6 +35,14 @@ code {
 
 code p {
     margin-bottom: 5px;
+}
+
+span.string{
+    color: #ffa581 !important;
+}
+
+span.option{
+    color: #6ecaff !important;
 }
 
 span {

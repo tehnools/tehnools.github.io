@@ -15,6 +15,14 @@ a:visited {
     color: #166694;
 }
 
+span.string{
+    color: #ffa581;
+}
+
+span.option{
+    color: #6ecaff;
+}
+
 div {
     display: block;
 }

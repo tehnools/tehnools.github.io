@@ -32,21 +32,30 @@
                     <p>Link: <a href="https://codepen.io/anon/pen/xemoYp">Example of Ids in use.</a></p>
                     <figure>
                         <pre>
-                            <code>&lt;div id="e6411de" class="post">&lt;/div></code>
+                            <code>&lt;div id="e6411de" <span class="option">class</span>=<span class="string">"post"</span>>&lt;/div></code>
                         </pre>
                     </figure>
-                    <hr>
-                    <p>Classes are used for multiple elements of the same type</p>
+                    <h3 class="title is-3">Other Cases to use Ids?</h3>
+                    <p>Another good example is supose you need to navigate to a specific location in page. There is an index you referenced at the bottom of a wiki page and you need to go to it right away.</p>
+                    <p>You can use the unique ID of that reference link to quickly navigate.</p>
                     <figure>
                         <pre>
-                            <code>&lt;div class="container">&lt;/div></code>
+                            <code>&lt;a <span class="option">href</span>=<span class="string">"#reference"</span>>Click Me&lt;/a></code>
+                        </pre>
+                        <figcaption><a href="#reference">Click Me!</a></figcaption>
+                    </figure>
+                    <hr>
+                    <p>Classes are used for multiple elements of the same type.</p>
+                    <figure>
+                        <pre>
+                            <code>&lt;div <span class="option">class</span>=<span class="string">"container"</span>>&lt;/div></code>
                         </pre>
                     </figure>
                     <p>Also Classes are easily added to an element</p>
                     <p>Link: <a href="https://codepen.io/anon/pen/XQoLRM">Example of multiple containers with classes</a></p>
                     <figure>
                         <pre>
-                                <code>&lt;div class="container blue">&lt;/div></code>
+                                <code>&lt;div <span class="option">class</span>=<span class="string">"container blue"</span>>&lt;/div></code>
                         </pre>
                     </figure>
 

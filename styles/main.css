@@ -1,0 +1,289 @@
+html {
+    -webkit-font-smoothing: antialiased;
+    text-size-adjust: 100%;
+}
+
+a {
+    color: #08fabd;
+}
+
+a:hover {
+    color: #4a4a4a;
+}
+
+a:visited {
+    color: #166694;
+}
+
+div {
+    display: block;
+}
+
+figure figcaption {
+    font-size: 0.8em;
+}
+
+code {
+    display: block;
+    background-color: #4a4a4a;
+    color: #e6e6ee;
+    width: 100%;
+    overflow-y: scroll;
+    max-height: 400px;
+    padding: 1em 0.75em;
+}
+
+code p {
+    margin-bottom: 5px;
+}
+
+span {
+    margin: 0;
+}
+
+table, th, td {
+    border: 1px solid #e6e6e6;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 1.125em;
+}
+
+body {
+    font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+    font-weight: normal;
+}
+
+p.warning {
+    color: #ffd102
+}
+
+p.alert {
+    color: #b60000
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    text-align: -webkit-match-parent;
+}
+
+.container {
+    margin: 0 auto;
+    position: relative;
+}
+
+.columns {
+    margin-left: -.75rem;
+    margin-right: -.75rem;
+    margin-top: -.75rem;
+}
+
+.columns:last-child {
+    margin-bottom: -.75rem;
+}
+
+.column {
+    margin: 0 5px 0 5px;
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: .75rem;
+}
+
+.column.is-one-third {
+    width: 33.333%;
+}
+
+.column.is-two-thirds {
+    width: 66.333%;
+}
+
+.hero {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    width: 100%;
+}
+
+.hero-body {
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.box {
+    background: white;
+    border: #e5e5e5 solid 1px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 1.34px #e6e6e6, 1px 2px 1.45px #f0f0f0;
+    color: #4a4a4a;
+    display: block;
+    padding: 1.25em;
+}
+
+.title {
+    word-break: break-word;
+}
+
+.title.is-1 {
+    font-size: 3em;
+    font-weight: 400;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.title.is-2 {
+    font-size: 2em;
+    margin-block-start: 0.54em;
+    margin-block-end: 0.54em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.title.is-3 {
+    font-size: 1.5em;
+    margin-block-start: 0.48em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.title.is-4 {
+    font-size: 1.3em;
+    margin-block-start: 0.33em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.menu .menu-list {
+    display: flex;
+    flex-direction: column;
+}
+
+ul.menu-list {
+    list-style: none;
+}
+
+ul.menu-list li a {
+    display: block;
+    text-decoration: none;
+    font-weight: 380;
+    padding: 0.5em 0.75em;
+}
+
+ul.menu a:visited {
+    color: inherit;
+}
+
+ul.menu-list a:hover {
+    background: #e6e6ee;
+    color: #4a4a4a;
+}
+
+.button {
+    background: #e6e6e6;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    padding: 0.5em 0.75em;
+    font-size: 1em;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.button.is-dark {
+    background: #4a4a4a;
+    color: white;
+}
+
+.button.is-primary {
+    background: #08fabd;
+    color: white;
+}
+
+.button.is-outlined {
+    border: #4a4a4a 1px solid;
+    background: white;
+    color: inherit;
+}
+
+.button.is-outlined:hover {
+    border: #4a4a4a 1px solid;
+    background: #4a4a4a;
+    color: white;
+}
+
+.button.is-primary.is-outlined:hover {
+    border: #08fabd 1px solid;
+    background: #08fabd;
+    color: white;
+}
+
+.button span {
+    margin-right: 5px;
+}
+
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1088px) {
+    .container {
+        max-width: 960px;
+        width: 960px;
+    }
+}
+
+@media screen and (min-width: 769px), print {
+    .columns:not(.is-desktop) {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1088px) {
+    .column.is-one-third-desktop {
+        flex: none;
+        width: 33.3333%;
+    }
+}
+
+@media screen and (min-width: 769px), print {
+    .column.is-one-third, .column.is-one-third-tablet {
+        flex: none;
+        width: 33.3333%;
+    }
+}
+
+@media screen and (max-width: 769px), print {
+    .hero {
+        width: 100%;
+    }
+    .container {
+        margin: 0;
+    }
+    .column.is-one-third {
+        margin: 0;
+        flex: none;
+        width: 100%;
+    }
+    .column.is-two-thirds {
+        margin: 0;
+        flex: none;
+        width: 100%;
+    }
+}

@@ -16,11 +16,11 @@ a:visited {
 }
 
 span.string{
-    color: #ffa581;
+    color: #ffa581 !important;
 }
 
 span.option{
-    color: #6ecaff;
+    color: #6ecaff !important;
 }
 
 div {

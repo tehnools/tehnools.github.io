@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <title>My blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css" type="text/css">
+    <link rel="stylesheet" href="../styles/style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="hero">
+        <div class="hero-body custom-hero">
+            <h1 class="title is-1 hero-heading">Learning Plan</h1>
+            <h2 class="title is-4 hero-heading">2, May 2019</h2>
+        </div>
+    </div>
+    <div class="container">
+        <div class="columns reverse-row-order">
+            <div class="column is-two-thirds">
+                <div class='box'>
+                    <h2 class="title is-2">To Do List</h2>
+                    <div class="control top-control">
+                        <button class="button is-primary" onclick="checkAll()">Check All</button>
+                        <label>
+                            <input type="checkbox" name="showComplete" onclick="displayToDos()">
+                            Show Completed
+                        </label>
+                    </div>
+                    <div class="control todo-control">
+                        <button class="button is-primary" onclick="addToDo()">+</button>
+                        <input type="text" class="input" value="" width="auto" name="toDoInput">
+                    </div>
+                    <ul class="todo-list"></ul>
+                </div>
+            </div>
+            <!-- NAV BAR -->
+            <div class="column is-one-third">
+                <div class="box">
+                    <h2 class="subtitle">Links</h2>
+                    <div class="menu">
+                        <ul class="menu-list">
+                            <a class="button is-dark is-fullwidth is-outlined" href="https://github.com/tehnools">
+                                <span class="icon">
+                                    <i class="fab fa-github" aria-hidden="true"></i>
+                                </span>
+                                <span>
+                                    My Github
+                                </span>
+                            </a>
+                            <a class="button is-primary is-fullwidth is-outlined"
+                                href="https://noelsoong.wordpress.com/">
+                                <span class="icon">
+                                    <i class="fab fa-wordpress" aria-hidden="true"></i>
+                                </span>
+                                <span>
+                                    My Wordpress
+                                </span>
+                            </a>
+                            <hr>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="./sprint1-cultural.html">Identity, Values and Strengths</a></li>
+                            <li><a href="./sprint2-cultural.html">Learning Plan</a></li>
+                            <li><a href="./sprint1-technical.html">Sprint 1 Technical Blog</a></li>
+                            <li><a href="./sprint2-technical.html">Sprint 2 Technical Blog</a></li>
+                            <hr>
+                            <h2 class="subtitle">Misc</h2>
+                            <li><a class="is-active" href="#">Sprint 3 Practice</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- NAV BAR -->
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script src="../scripts/todo-list.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>

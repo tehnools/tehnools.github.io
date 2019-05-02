@@ -32,7 +32,6 @@ const deleteToDo = (index) => {
 const toggleToDo = (event) => {
     let index = event.target.parentNode.parentNode.id;
     toDoList[index].toggleComplete();
-    console.log(toDoList[index]);
     displayToDos();
 }
 

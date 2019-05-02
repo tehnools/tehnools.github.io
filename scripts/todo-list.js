@@ -1,14 +1,13 @@
+
 let toDoList = [];
 
-class ToDo {
-    constructor(text, isComplete) {
-        this.text = text;
-        this.isComplete = isComplete || false;
-    }
+function ToDo(text, isComplete){
+    this.text = text;
+    this.isComplete = isComplete || false;
 
-    toggleComplete = () => {
+    this.toggleComplete = () => {
         this.isComplete = !this.isComplete;
-    }
+    };
 }
 
 const addToDo = () => {

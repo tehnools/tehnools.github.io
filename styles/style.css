@@ -11,13 +11,14 @@ hr {
     color: white;
 }
 
-.menu .menu-list .button{
+.menu .menu-list .button {
     margin-bottom: 1em;
 }
 
 .container {
     padding: 1em;
 }
+
 
 .custom-hero {
     display: flex;
@@ -30,14 +31,14 @@ hr {
     color: white;
 }
 
-.hero-heading{
+.hero-heading {
     display: flex;
     width: 100%;
     margin-left: auto;
     justify-content: center;
 }
 
-.title.is-3{
+.title.is-3 {
     margin-top: 1em;
 }
 

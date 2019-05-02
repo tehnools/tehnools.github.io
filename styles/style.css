@@ -19,7 +19,6 @@ hr {
     padding: 1em;
 }
 
-
 .custom-hero {
     display: flex;
     justify-content: center;
@@ -42,7 +41,7 @@ hr {
     margin-top: 1em;
 }
 
-.control.top-control{
+.control.top-control {
     align-content: center;
     display: flex;
     width: 100%;
@@ -90,26 +89,18 @@ ul.todo-list li a.check-button {
     padding: 4px;
 }
 
-a.check-button span{
+a.check-button span {
     pointer-events: none;
 }
 
-a.check-button.disabled{
+a.check-button.disabled {
     color: #fefefe;
     cursor: pointer;
 }
 
-a.check-button.disabled:hover{
-    color: limegreen;
-}
-
-a.check-button.active{
+a.check-button.active {
     color: limegreen;
     cursor: pointer;
-}
-
-a.check-button.active:hover{
-    color: #fefefe;
 }
 
 ul.todo-list li a.delete:hover {

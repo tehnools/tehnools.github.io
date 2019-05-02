@@ -103,9 +103,7 @@ const displayToDos = () => {
 
 
         // Create Delete Button
-        let deleteButton = document.createElement('a');
-        deleteButton.className = 'delete';
-        deleteButton.onclick = removeToDo;
+        let deleteButton = createDeleteButton();
 
         // Append children
         checkButton.appendChild(tick);

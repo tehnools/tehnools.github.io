@@ -91,14 +91,8 @@ const displayToDos = () => {
         let item = document.createElement('li');
         item.id = i;
 
-        // Create Check Item
-        let checkButton = document.createElement('a');
-        if (todo.isComplete) {
-            checkButton.className = 'check-button active';
-        } else {
-            checkButton.className = 'check-button disabled';
-        }
-        checkButton.onclick = toggleToDo;
+        let checkButton = createCheckButton(todo.isComplete);
+
         // Create Thick for Check
         let tick = document.createElement('span');
         tick.className = 'fas fa-check';

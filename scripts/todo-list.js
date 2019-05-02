@@ -1,8 +1,14 @@
 "use-strict";
-
+// Variables
 let toDoList = [];
 
-function ToDo(text, isComplete){
+
+function ToDo(text, isComplete) {
+    /*** ToDo class is an object of type ToDo
+     * args : string text, bool isComplete
+     * functions: toggleComplete
+     * returns null
+    */
     this.text = text;
     this.isComplete = isComplete || false;
 
@@ -114,7 +120,9 @@ const displayToDos = () => {
     }
 }
 
+
 const checkAll = () => {
+    // Checks all in toDoList
     if (toDoList.length === 0) {
         alert("List Empty!");
     }
@@ -128,6 +136,7 @@ const checkAll = () => {
 
 
 const removeToDo = (event) => {
+    //Delete button Removes parent Todo
     let index = event.target.parentNode.id;
     deleteToDo(index);
     displayToDos();

@@ -30,12 +30,49 @@ const deleteToDo = (index) => {
 
 
 const toggleToDo = (event) => {
-    let index = event.target.parentNode.parentNode.id;
-    toDoList[index].toggleComplete();
+    // Toggle Check button for each ToDo
+    let index;
+    switch (event.target.tagName) {
+        case "A":
+            index = event.target.parentNode.id;
+            break;
+        case "svg":
+            index = event.target.parentNode.parentNode.id;
+            break;
+        case "path":
+            index = event.target.parentNode.parentNode.parentNode.id;
+            break;
+    }
+
+    try {
+        toDoList[index].toggleComplete();
+    }
+    catch (e) {
+        console.log("Error", e);
+    }
+
     displayToDos();
 }
 
+const createCheckButton = (isComplete) => {
+    //Creates Check button with events and classes
+    let checkButton = document.createElement('a');
+    if (isComplete) {
+        checkButton.className = 'check-button active';
+    } else {
+        checkButton.className = 'check-button disabled';
+    }
+    checkButton.onclick = toggleToDo;
+    return checkButton
+}
 
+const createDeleteButton = () => {
+    // Creates a Delete button with events and classes
+    let deleteButton = document.createElement('a');
+    deleteButton.className = 'delete';
+    deleteButton.onclick = removeToDo;
+    return deleteButton;
+}
 
 const displayToDos = () => {
     // Find UL set it to empty

@@ -1,0 +1,171 @@
+<html>
+
+<head>
+    <title>My blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css" type="text/css">
+    <link rel="stylesheet" href="./tehnools.github.io/styles/style.css" type="text/css">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="hero">
+        <div class="hero-body custom-hero">
+            <h1 class="title is-1 hero-heading">Sprint 4 Technical Blog</h1>
+            <h2 class="title is-4 hero-heading">8, May 2019</h2>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="columns reverse-row-order">
+                <div class="column is-two-thirds">
+                    <h1 class="title is-1">Contents</h1>
+                    <nav class="panel">
+                        <a href="#box-1" class="panel-block">Problem 1</a>
+                        <a href="#box-2" class="panel-block">Problem 2</a>
+                    </nav>
+                    <div id="box-1" class='box' id="back-up">
+                        <h2 class="title is-2">
+                            Two problems Encountered
+                        </h2>
+
+                        <h3 class="title is-3">
+                            Problem 1 (blocked):
+                        </h3>
+                        <p>
+                            I was creating the the whereAreYou(arr) function. The function takes in an array and finds
+                            ‘Scooby’ behind a door.
+                        </p>
+                        <h3 class="title is-3">
+                            What Problem Solving Technique I used
+                        </h3>
+                        <p>
+                            The problem solving technique I used was console logging and reading error messages.
+                        </p>
+                        <p>
+                            The objects look like so:
+                        </p>
+                        <br>
+                        <code>
+                            {door: 1, hiding: ‘Scooby’}
+                        </code>
+                        <p>
+                            I console logged all objects in the array and found that I was getting undefined objects.
+                        </p>
+                        <p>
+                            I looked down into the testcode and found that empty arrays were being tested. So I did a
+                            sanity check for empty arrays at the start of the function like so: (example in pseudo code)
+                        </p>
+                        <br>
+                        <code>
+                                if array length is 0, return 0.
+                            </code>
+                        <h3 class="title is-3">
+                            What i thought
+                        </h3>
+                        <p>
+                            I thought my solution was complete but I had an error which says that I cannot get property
+                            door from undefined. I had a suspicion that an empty array was the case but wanted to be
+                            sure.
+                        </p>
+
+                    </div>
+                    <div id="box-2" class="box">
+                        <h2 class="title is-2">
+                            Problem 2 (Elegant Solution):
+                        </h2>
+                        <p>
+                            Fizzbuzz is a simple problem common in programing challenges. For this version the function
+                            fizzBuzz should return "Fizz", "Buzz" and "FizzBuzz" for multiples of 3,5 and 15
+                            respectively
+                        </p>
+                        <p>
+                            I wanted to make fizzbuzz more readable
+                        </p>
+                        <h3 class="title is-3">
+                            What Problem Solving Technique I used
+                        </h3>
+                        <p>
+                            I used the rubber ducky method but even though I don’t have a rubber ducky. I used my
+                            teacup.
+                        </p>
+                        <p>
+                            I separated the logic from the forloop in the form of a helper function
+                        </p>
+                        <code>getFizzBuzz(number):</code>
+                        <br>
+                        <p>
+                            I created 3 variables holding the true/false values for multiple or 3, 5 and 15.
+                            This made it easy to create 3 if else statements like so in pseudo code:
+                        </p>
+                        <code>
+                        const isMultiple3 = number % 3 === 0;<br>
+                        const isMultiple5 = number % 5 === 0;<br> 
+                        const isMultiple15 = isMultiple3 && isMultiple5;<br>
+                        <br>
+                        if (isMultiple15){<br>
+                        &nbsp&nbsp&nbsp&nbspreturn "FizzBuzz";<br>
+                        } else if (isMultiple3){ <br>
+                        &nbsp&nbsp&nbsp&nbspreturn "Fizz"; <br>
+                        } else if (isMultiple5){ <br>
+                        &nbsp&nbsp&nbsp&nbspreturn "Buzz";<br>
+                        } <br>
+                        return number;<br>
+                        </code>
+                        <h3 class="title is-3">
+                            What i thought
+                        </h3>
+                        <p>
+                            I could have utilized map() built in functions but it may have made it less readable.
+                            Doesn't mean I know it doesn't mean I should
+                        </p>
+                    </div>
+                </div>
+                <!-- NAV BAR -->
+                <div class="column is-one-third">
+                    <div class="box">
+                        <h2 class="subtitle">Links</h2>
+                        <div class="menu">
+                            <ul class="menu-list">
+                                <a class="button is-dark is-fullwidth is-outlined" href="https://github.com/tehnools">
+                                    <span class="icon">
+                                        <i class="fab fa-github" aria-hidden="true"></i>
+                                    </span>
+                                    <span>
+                                        My Github
+                                    </span>
+                                </a>
+                                <a class="button is-primary is-fullwidth is-outlined"
+                                    href="https://noelsoong.wordpress.com/">
+                                    <span class="icon">
+                                        <i class="fab fa-wordpress" aria-hidden="true"></i>
+                                    </span>
+                                    <span>
+                                        My Wordpress
+                                    </span>
+                                </a>
+                                <hr>
+                                <li><a href="../index.html">Home</a></li>
+                                <li><a href="./sprint1-cultural.html">Identity, Values and Strengths</a></li>
+                                <li><a href="./sprint2-cultural.html">Learning Plan</a></li>
+                                <li><a href="./sprint3-cultural.html">EQ / EI - Emotional Intelligence</a></li>
+                                <li><a href="./sprint1-technical.html">Sprint 1 Technical Blog</a></li>
+                                <li><a href="./sprint2-technical.html">Sprint 2 Technical Blog</a></li>
+                                <li><a href="./sprint3-technical.html">Sprint 3 Technical Blog</a></li>
+                                <li><a href="./sprint4-technical.html">Sprint 4 Technical Blog</a></li>
+                                <hr>
+                                <h2 class="subtitle">Misc</h2>
+                                <li><a href="./todolist.html">Sprint 3 Practice</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- NAV BAR -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>

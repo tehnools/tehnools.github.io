@@ -6,6 +6,10 @@ hr {
     margin: 1em 0 1em 0;
 }
 
+code{
+    margin-left: 1em;
+}
+
 .menu-list a.is-active {
     background-color: darkslategray;
     color: white;

@@ -47,6 +47,13 @@ code{
     font-weight: 325;
 }
 
+
+.title.is-4 {
+    margin-top: 1em;
+    font-family: inherit;
+    font-weight: 300;
+}
+
 .control.top-control {
     align-content: center;
     display: flex;

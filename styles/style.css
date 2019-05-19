@@ -1,3 +1,12 @@
+ul {
+    list-style-type: circle;
+    margin-left: 2em;
+}
+
+ul li{
+    margin-bottom: 10px;
+}
+
 p {
     margin-top: 1em;
 }
@@ -6,8 +15,17 @@ hr {
     margin: 1em 0 1em 0;
 }
 
-code{
+code {
     margin-left: 1em;
+}
+
+.menu-list{
+    margin: 0;
+    list-style: none;
+}
+
+.menu-list li{
+    margin: 0;
 }
 
 .menu-list a.is-active {
@@ -46,7 +64,6 @@ code{
     font-family: inherit;
     font-weight: 325;
 }
-
 
 .title.is-4 {
     margin-top: 1em;
@@ -120,7 +137,7 @@ ul.todo-list li a.delete:hover {
     background: darkcyan;
 }
 
-.notification b.h1{
+.notification b.h1 {
     font-size: 2em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
